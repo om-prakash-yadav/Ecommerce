@@ -4,55 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    ol {
-        list-style: none;
-        display: flex;
-    }
-    li {
-        padding: 18px 30px ;
-        font-size: larger;
-        font-weight: bold;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .header {
-        background-color: rgb(165, 165, 241);
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-    .header img {
-        height: 100px;
-        margin-right: 20px; 
-    }
-    .btn{
-        background-color: rgb(165, 165, 241);
-    }
-    .btn:hover{
-        background-color: rgb(144, 144, 255);
-    }
-</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #f7b09a;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            height: 100px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links ol {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #4A90E2;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: white;
+            color: #4A90E2;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #357ABD;
+            color: white;
+        }
+        a{
+            color: #4A90E2;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <img src="../images/bird.png" alt="">
-    <div class="container-flow" style="background-color: rgb(165, 165, 241); height: 70px;">
-        <ol>
-            <!-- <li> <a href="#" >CART</a></li> -->
-            
-        </ol>
+        <img src="../images/bird.png" alt="Logo">
+        <div class="nav-links">
+            <ol>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CART</a></li>
+            </ol>
+        </div>
+        <button class="btn"><a href="../login.html">LOGIN</a> </button>
     </div>
-    <button class="btn btn-primary">LOGIN</button>
 </body>
 </html>
