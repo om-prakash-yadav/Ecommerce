@@ -14,12 +14,12 @@
             padding: 0 10px;
         }
         .header img {
-            height: 80px;
+            height: 70px;
             width: auto;
             margin-right: 10px;
-            transition: transform 0.3 ease , box-shadow 0.3 ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        img:hover{
+        img:hover {
             transform: scale(1.1);
         }
         .header-title {
@@ -52,6 +52,32 @@
             color: white;
             text-decoration: none;
         }
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            color: white;
+        }
+        .navbar-toggler-icon {
+            color: white;
+        }
+        .navbar-collapse {
+            background-color: rgb(25, 25, 36);
+            padding: 10px;
+        }
+        .navbar-collapse.show .nav-item a {
+            color: #f8f8f8;
+        }
+        .navbar-collapse.show .nav-item a:hover {
+            color: #4A90E2;
+        }
+        @media (max-width: 767.98px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-collapse {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,5 +109,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar-toggler').click(function() {
+                if ($('#navbarNav').hasClass('show')) {
+                    $('#navbarNav').collapse('hide');
+                    $('.navbar-toggler-icon').css('color', 'white');
+                } else {
+                    $('#navbarNav').collapse('show');
+                    $('.navbar-toggler-icon').css('color', 'white');
+                }
+            });
+
+            $('#navbarNav').on('shown.bs.collapse', function() {
+                $('.navbar-nav .nav-link').css('color', '#f8f8f8');
+            });
+
+            $('#navbarNav').on('hidden.bs.collapse', function() {
+                $('.navbar-nav .nav-link').css('color', '#f8f8f8');
+            });
+        });
+    </script>
 </body>
 </html>
