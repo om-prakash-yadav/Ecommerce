@@ -1,0 +1,167 @@
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.header {
+	background-color: #24262b;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 40px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+	height: 100px;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links ol {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin: 0 15px;
+	font-size: 18px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links a:hover {
+	color: #4A90E2;
+	background-color: white;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+
+.btn {
+	background-color: white;
+	color: #4A90E2;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+	background-color: #24262b;
+	color: white;
+}
+
+a {
+	color: #4A90E2;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #24262b;
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+
+
+/* carouse css  */
+
+.carousel-item {
+	max-width: 100%;
+	height: 90vh;
+}
+
+@media screen and (max-width: 1200px) {
+	.carousel-item {
+		height: 40vh;
+	}
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
