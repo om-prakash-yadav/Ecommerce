@@ -13,7 +13,7 @@
 
         }
         .container{
-            background-image:url(./abhiimages/background.jfif);
+            background-color: rgb(203, 243, 203);
             background-position:center;
             background-position-x:center;
             display: flex;
@@ -21,34 +21,16 @@
             
 
         }
-        /* .top{
-            display:grid;
-            grid-template-columns: 300px auto;
-            padding:0;
-            margin:0;
-            
-
-        } */
+       
         .tagline{
-            /* background: black; */
+
             color:white;
-            text-shadow: blueviolet 2px 4px;
+            text-shadow: black 2px 4px;
             background-image: url(./abhiimages/istockphoto-1003735800-612x612.jpg);
             text-align: center;
-        }
-        /* .topcolor{ 
-            background-color: white;
-            background-size: 300px;
-            margin-right:0 auto;
-            text-align: center;
             
-         }  */
-        p{
-            text-align: center;
         }
-        h5{
-            text-align: center;
-        }
+       
         .row{
             justify-content: space-around;
             
@@ -65,6 +47,9 @@
         button{
             margin-bottom: 20px;
         }
+        p{
+            color:rgb(108, 106, 106);
+        }
          img {
             transition: transform 0.3s ease-in-out;
         }
@@ -72,13 +57,67 @@
         img:hover {
             transform: scale(1.1);
         } 
-        p{
-            text-shadow: 2px 2px 8px red;
-        }
         h1{
             font-size: 100px;
         }
+        h5{
+            font-size: 30px;
+            text-align:left;
+            font-weight: bolder;
+        }
+        .button{
+
+            background-color: rgb(246, 241, 241);
+            color: black;
+            padding: 10px;
+            text-align: center;
+            text-decoration:indigo;
+            display:inline-block;
+            font-size: 16px;
+             margin: 2px 1px;
+            cursor: pointer;
+            border-radius:50%;
+            border:medium;
+            /* border: rgb(174, 164, 164);
+            border-style:ridge; */
+            /* height:min-content; */
+            
+        } 
+    
         
+        .this{
+            display: flex;
+            flex-direction: row;
+            margin-bottom:0 auto;
+
+         }
+        .button2{
+            display:inline block;
+            background-color: rgb(173, 238, 75);
+            size:20px;
+
+        }
+        .here{
+            background: #000;
+            align-items: center;
+            display:flex;
+            justify-content: space-between;
+        }
+        .des{
+            float:right;
+            font:20px;
+            margin-bottom: 0;
+            text-align: bottom;
+            justify-content: center;
+            padding-top:15px;
+            font-weight: bold;
+            color:black;
+        }
+        /* .qwe{
+            margin-top:40px;
+        } */
+        
+   
        
     </style>
 </head>
@@ -91,67 +130,133 @@
     <div class="card col-md-3">
         <img src="./abhiimages/img 1.jpg" alt="">
         <h5>Reebok Autostart</h5>
-        <p>Indians delight</p>
-        <p>price $100</p>
-        <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+        <p class ="this">Indians Delight <br>For The Style Of India</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+    
+
+        
     </div>
     <div class="card col-md-3">
         <img src="./abhiimages/image 2.jpg" alt="">
         <h5>Llum's jaan shoes</h5>
-        <p>Go the distance</p>
-        <p>price $30</p>
-        <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+        <p class ="this">Your Travel Companion <br>Auto Shock Absorber</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
     </div>
     <div class="card col-md-3">
         <img src="./abhiimages/img 3.jpg" alt="">
         <h5>Nike Jordans</h5>
-        <p>Your travel Companion</p>
-        <p>price $150</p>
-        <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+        <p class ="this">Athlete's Pride<br>The Subtle Art</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
     </div>
     <div class="row">    
         <div class="card col-md-3">
             <img src="./abhiimages/img 4.jpg" alt="">
             <h5>Rebbok super light</h5>
-            <p>Athlete's pride</p>
-            <p>price $100</p>
-            <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+            <p class ="this">The A-500 Mig Launcher<br>For Skyrocketing Your Wear</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
         </div>
         <div class="card col-md-3">
             <img src="./abhiimages/image 5.jpg" alt="">
             <h5>Air Women's lifestyle</h5>
-            <p>Party Wear,Honeymoon sojurn </p>
-            <p>price $1000</p>
-            <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+            <p class ="this">The Customer's Favourite <br>Lost In The Comfort</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
         </div>
         <div class="card col-md-3">
             <img src="./abhiimages/image 6.jpg" alt="">
             <h5>Adidas S-67 Super</h5>
-            <p>Athlete's pride</p>
-            <p>price $10000</p>
-            <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+            <p class ="this">Pre-Booked, The Site Crasher<br>Highest Selling Shoe Till Date </p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
         </div>
         <div class="row">    
             <div class="card col-md-3">
                 <img src="./abhiimages/image 7.jpg" alt="">
                 <h5>Rebbok super light</h5>
-                <p>Athlete's delight</p>
-                <p>price $100</p>
-                <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+                <p class ="this">Light Like Feather And Soft As Gulab<br>The Wardbore Enhancer</p>
+                <div class="qwe" > 
+                 <button class="button">6</button>
+                 <button class="button">7</button>
+                 <button class="button">8</button>
+                 <button class="button">9</button>
+                 <p class="des">Price $500</p>
+                </div>
+                
+                 <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
             </div>
             <div class="card col-md-3">
                 <img src="./abhiimages/img 8.jpg" alt="">
                 <h5>Nike -P200</h5>
-                <p>Your everyday deight</p>
-                <p>price $75</p>
-                <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+                <p class ="this">Towards The Notion Of Free Work<br>FOr the Fitness Freak</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
             </div>
             <div class="card col-md-3">
                 <img src="./abhiimages/image 9.jpg" alt="">
                 <h5>Converse All Star</h5>
-                <p>Office Saviour</p>
-                <p>price $32</p>
-                <button style="font-size:24px" class="btn btn-primary"><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
+                <p class ="this">The Office Attractor <br> Champa Chemli Favourite</p>
+           <div class="qwe" > 
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <p class="des">Price $500</p>
+           </div>
+           
+            <button style="font-size:24px" class="btn btn-primary bg-black" ><i class="fa fa-shopping-cart"></i><span style="padding-left:10px;"> Add to Cart</span></button>
             </div>
             <div>
                 <nav></nav>
