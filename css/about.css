@@ -27,17 +27,11 @@ header h1 {
 .content h2 {
     color: white;
     text-align: center;
-    background-color: black;
+    background-color:rgb(13, 6, 31) ;
 }
 .content img{
     float:right;
 }
 .content p {
     margin-bottom: 20px;
-}
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
 }
