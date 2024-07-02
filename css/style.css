@@ -1,6 +1,7 @@
 body {
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
+	
 }
 
 * {
@@ -15,8 +16,6 @@ body {
 
 
 /* navbar css starts here  */
-
-
 .navbar {
 	background-color: rgb(25, 25, 36);
 	transition: all 0.3s ease;
@@ -83,7 +82,7 @@ body {
 		display: none !important;
 	}
 }
-.navbar-brand :hover {
+.navbar-brand:hover {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	transform: scale(1.1);
 }
@@ -95,10 +94,10 @@ body {
 
 /* footer css starts here  */
 
-
 .footer {
 	background-color: #24262b;
 	padding: 70px 0;
+	width: 100%;
 }
 
 .footer-col {
@@ -151,6 +150,34 @@ body {
 		width: 100%;
 	}
 }
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+
 
 
 /* bootstrap carousel css  */
